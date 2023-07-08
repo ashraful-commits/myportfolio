@@ -32,7 +32,10 @@ const SkillSection = () => {
   ];
 
   return (
-    <section className="bg-white md:px-10 flex  lg:flex lg:items-center  justify-center lg:px-10 px-10 py-16 min-h-screen  dark:bg-gray-900 dark:text-white">
+    <section
+      id="skill"
+      className="bg-white md:px-10 flex  lg:flex lg:items-center  justify-center lg:px-10 px-10 py-16 min-h-screen  dark:bg-gray-900 dark:text-white"
+    >
       <div className="container mx-auto lg:flex md:flex w-full h-full dark:bg-gray-900 dark:text-white">
         <div className="w-[100%] md:w-[30%]  text-center lg:text-left md:text-left lg:w-[30%]">
           <h2 className="text-4xl font-bold dark:text-white text-gray-800 mb-12">

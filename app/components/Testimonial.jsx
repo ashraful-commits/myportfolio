@@ -111,7 +111,10 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="bg-white min-h-screen lg:flex lg:items-center dark:bg-gray-900 dark:text-white px-10 md:py-10 lg:py-10 py-10">
+    <section
+      id="testimonial"
+      className="bg-white min-h-screen lg:flex lg:items-center dark:bg-gray-900 dark:text-white px-10 md:py-10 lg:py-10 py-10"
+    >
       <div className="container md:flex lg:flex lg:gap-4 px-10 md:gap-10 mx-auto">
         <div className=" lg:w-[30%] md:w-[30%]">
           <h2 className="text-4xl  dark:text-white font-bold text-gray-800 text-center lg:text-left md:text-left mb-12">

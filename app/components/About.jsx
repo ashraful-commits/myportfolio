@@ -14,7 +14,10 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="bg-white  lg:flex lg:items-center  py-16 min-h-screen  dark:bg-gray-900 dark:text-white">
+    <section
+      id="about"
+      className="bg-white  lg:flex lg:items-center  py-16 min-h-screen  dark:bg-gray-900 dark:text-white"
+    >
       <div className="container mx-auto w-full md:px-10 lg:px-10 px-10 h-full dark:bg-gray-900 dark:text-white">
         <div className="dark:bg-gray-900 w-full dark:text-white grid grid-cols-1 text-center md:text-left lg:text-left md:grid-cols-2 mx-4 md:mx-0 lg:mx-0 gap-8">
           <motion.div

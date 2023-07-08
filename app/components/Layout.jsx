@@ -88,7 +88,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="relative group h-8 overflow-hidden border-b p-2 "
               >
-                <Link href="/">
+                <Link href="#home">
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
@@ -106,7 +106,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/about">
+                <Link href="#about">
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
@@ -124,7 +124,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/projects">
+                <Link href="#projects">
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
@@ -142,7 +142,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/testimonial">
+                <Link href="#testimonial">
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
@@ -160,7 +160,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/contact">
+                <Link href="#contact">
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
@@ -184,7 +184,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/">
+                <Link href="#home">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
@@ -200,7 +200,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/about">
+                <Link href="#about">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
@@ -216,7 +216,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/projects">
+                <Link href="#projects">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
@@ -232,7 +232,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/testimonial">
+                <Link href="#testimonial">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
@@ -250,7 +250,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="relative group h-8 overflow-hidden border-b p-2"
               >
-                <Link href="/contact">
+                <Link href="#contact">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
