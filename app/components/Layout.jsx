@@ -35,14 +35,38 @@ const Layout = ({ children }) => {
       once: true,
     });
   }, []);
+  const [hideNav, setHideNav] = useState(false);
 
+  useEffect(() => {
+    let prevScrollPos = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      console.log(currentScrollPos);
+      if (prevScrollPos > currentScrollPos) {
+        setHideNav(false); // Scrolling up, show the navigation
+      } else {
+        setHideNav(true); // Scrolling down, hide the navigation
+      }
+
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setHideNav]);
   return (
     <div>
       <header
-        className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4  lg:px-10 md:px-10 px-12"
-        data-aos="fade-down"
+        className={`bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
       >
-        <nav className="flex items-center lg:px-10 md:px-10 justify-between">
+        <nav
+          className={`flex items-center lg:px-10 md:px-10 top-0 z-30 justify-between ${
+            hideNav ? "hidden" : "block"
+          }`}
+        >
           <div className="flex items-center">
             <h1 className="text-xl font-bold text-teal-600 uppercase">
               Md Ashraful Alam

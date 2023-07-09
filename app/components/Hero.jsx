@@ -33,7 +33,7 @@ const Hero = ({ children }) => {
             <span className="text-teal-900 dark:text-teal-900">
               Hi, I&apos;m
             </span>
-            <span className="text-teal-900 dark:text-teal-900 mx-2">
+            <span className="text-teal-600 dark:text-teal-900 mx-2">
               Md Ashraful Alam
             </span>
           </h1>
