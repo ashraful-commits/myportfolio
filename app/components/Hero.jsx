@@ -53,7 +53,7 @@ const Hero = ({ children }) => {
             Developer
           </h1>
           <p
-            className="text-lg text-gray-300 md:w-[50%] md:ml-[25%] lg:w-[50%] lg:ml-[25%] mb-12"
+            className="text-lg text-gray-500 md:w-[50%] md:ml-[25%] lg:w-[50%] lg:ml-[25%] mb-12"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
