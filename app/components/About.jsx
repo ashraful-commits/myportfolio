@@ -23,7 +23,7 @@ const AboutSection = () => {
       button="Download Cv"
     >
       <motion.div
-        className="flex justify-center"
+        className="flex justify-center sm:my-10"
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -33,12 +33,12 @@ const AboutSection = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className=" rounded-full w-[400px] h-[400px] overflow-hidden border-4 border-white"
+          className=" rounded-full w-[350px] h-[350px] overflow-hidden border-4 border-white"
         >
           <Image
             src={web}
             alt="Profile"
-            width={400}
+            width={350}
             height={100}
             className=" rounded-full"
           />

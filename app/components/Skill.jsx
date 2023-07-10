@@ -33,18 +33,18 @@ const SkillSection = () => {
   ];
 
   return (
-    <Section title="Skill" subtitle="What i have" discription="" button="">
+    <Section title="Skill" subtitle="What i have !" discription="" button="">
       <div className="w-[100%] flex md:w-[70%] lg:w-[70%] my-10 flex-wrap gap-3">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="w-[100%] hover:bg-teal-500 group transition-all  md:w-[45%] lg:w-[30%] bg-white rounded-lg shadow-md  mx-1"
+            className="w-[100%] hover:bg-teal-500 group transition-all md:w-[45%] lg:w-[30%] bg-white rounded-lg shadow-md  mx-1"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
             data-aos="zoom-in"
           >
-            <div className="p-4">
+            <div className="px-5 py-10">
               <div className="md:flex lg:flex items-center  justify-center text-center mb-4 gap-2">
                 <span className="text-teal-500 group-hover:text-white inline-block">
                   {skill.icon}
