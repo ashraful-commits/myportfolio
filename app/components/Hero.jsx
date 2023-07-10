@@ -6,7 +6,12 @@ import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiOutlineMail,
+} from "react-icons/ai";
 const Hero = ({ children }) => {
   useEffect(() => {
     AOS.init({
@@ -30,16 +35,16 @@ const Hero = ({ children }) => {
       <div className="container mx-auto mt-32">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-8 md:flex justify-center">
-            <span className="text-teal-900 dark:text-teal-900">
+            <span className="text-gray-500 dark:text-teal-600">
               Hi, I&apos;m
             </span>
-            <span className="text-teal-600 dark:text-teal-900 mx-2">
+            <span className="text-teal-600 dark:text-white mx-2">
               Md Ashraful Alam
             </span>
           </h1>
-          <h1 className="text-3xl font-bold mb-8 md:flex justify-center">
+          <h1 className="text-3xl font-bold mb-8 md:flex text-gray-500 dark:text-white justify-center">
             I &apos;m
-            <span className=" text-teal-500 mx-2 font-light">
+            <span className=" text-teal-700 mx-2 font-light">
               <Typewriter
                 options={{
                   strings: ["Mern Stack", "JavaScript", "Next"],
@@ -53,15 +58,29 @@ const Hero = ({ children }) => {
             Developer
           </h1>
           <p
-            className="text-lg text-gray-500 md:w-[50%] md:ml-[25%] lg:w-[50%] lg:ml-[25%] mb-12"
+            className="text-lg text-gray-500 md:w-[50%] dark:text-gray-300 md:ml-[25%] lg:w-[50%] lg:ml-[25%] mb-12"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             I build robust and scalable web applications using the MERN
             (MongoDB, Express.js, React.js, Node.js) stack.
           </p>
+          <div className="flex justify-center gap-5 w-full h-full my-5">
+            <span className="inline-block p-2 hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-600 cursor-pointer hover:bg-teal-900">
+              <AiFillGithub className="text-xl text-teal-500    dark:text-white" />
+            </span>
+            <span className="inline-block p-2 hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-600 cursor-pointer hover:bg-teal-900">
+              <AiFillLinkedin className="text-xl text-teal-500    dark:text-white" />
+            </span>
+            <span className="inline-block p-2 hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-600 cursor-pointer hover:bg-teal-900">
+              <AiFillFacebook className="text-xl text-teal-500    dark:text-white" />
+            </span>
+            <span className="inline-block p-2 hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-600 cursor-pointer hover:bg-teal-900">
+              <AiOutlineMail className="text-xl text-teal-500    dark:text-white" />
+            </span>
+          </div>
           <motion.button
-            className="px-6 py-3 bg-teal-500 text-white rounded hover:bg-teal-600 transition-colors duration-300"
+            className="px-6  hover:shadow-2xl hover:shadow-white font-bold py-3 my-5 bg-teal-500 text-white rounded hover:bg-teal-600 transition-colors duration-300"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
@@ -69,7 +88,7 @@ const Hero = ({ children }) => {
             data-aos-duration="1000"
             data-aos-delay="1000"
           >
-            Contact Me
+            Let&apos;s Connect
           </motion.button>
         </div>
       </div>

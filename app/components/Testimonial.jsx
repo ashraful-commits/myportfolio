@@ -61,18 +61,18 @@ const TestimonialSection = () => {
   ];
 
   const settings = {
-    dots: true, // Show dot indicators
-    arrows: true, // Show navigation arrows
-    infinite: true, // Enable infinite looping
-    speed: 500, // Transition speed in milliseconds
-    slidesToShow: 1, // Number of slides to show at a time
-    slidesToScroll: 1, // Number of slides to scroll at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay speed in milliseconds
-    pauseOnHover: true, // Pause autoplay on hover
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1980, // Adjust settings for screens smaller than 768px
+        breakpoint: 1980,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
@@ -80,28 +80,28 @@ const TestimonialSection = () => {
         },
       },
       {
-        breakpoint: 1280, // Adjust settings for screens smaller than 768px
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 900, // Adjust settings for screens smaller than 768px
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 768, // Adjust settings for screens smaller than 768px
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 480, // Adjust settings for screens smaller than 480px
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -115,8 +115,8 @@ const TestimonialSection = () => {
       id="testimonial"
       className="bg-white min-h-screen lg:flex lg:items-center dark:bg-gray-900 dark:text-white px-10 md:py-10 lg:py-10 py-10"
     >
-      <div className="container md:flex lg:flex lg:gap-4 px-10 md:gap-10 mx-auto">
-        <div className=" lg:w-[30%] md:w-[30%]">
+      <div className="container w-full text-center lg:text-left md:text-left h-full md:flex lg:flex lg:gap-4 px-10 md:gap-5 mx-auto  ">
+        <div className=" lg:w-[30%] mr-10  md:w-[30%]">
           <h2 className="text-4xl  dark:text-white font-bold text-gray-800 text-center lg:text-left md:text-left mb-12">
             Testimonials
           </h2>
@@ -124,7 +124,7 @@ const TestimonialSection = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, saepe.
           </p>
         </div>
-        <div className="lg:w-[70%]  md:w-[70%] ">
+        <div className="lg:w-[70%] my-5 lg:my-0 md:my-0 md:w-[70%] ">
           <Slider {...settings} className="w-[100%]">
             {testimonials.map((testimonial, index) => (
               <motion.div

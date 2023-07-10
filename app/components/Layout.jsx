@@ -116,9 +116,9 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className=" text-teal-800 font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 flex flex-col">
+                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Home
                     </span>
                   </span>
@@ -134,9 +134,9 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className=" text-teal-800 font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 flex flex-col">
+                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       About
                     </span>
                   </span>
@@ -152,9 +152,9 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className="text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className=" text-teal-800 font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 flex flex-col">
+                    <span className=" dark:text-white  font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Projects
                     </span>
                   </span>
@@ -170,9 +170,9 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className=" text-teal-800 font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 flex flex-col">
+                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Testimonial
                     </span>
                   </span>
@@ -188,9 +188,9 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className=" text-teal-800 font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 flex flex-col">
+                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Contact
                     </span>
                   </span>
@@ -212,7 +212,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">Home</span>
                   </span>
@@ -228,7 +228,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold ">About</span>
                   </span>
@@ -244,7 +244,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">Projects</span>
                   </span>
@@ -260,7 +260,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">
                       Testimonial
@@ -278,7 +278,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
-                      className=" text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">Contact</span>
                   </span>
