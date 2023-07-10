@@ -70,8 +70,17 @@ const TestimonialSection = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+
     pauseOnHover: true,
     responsive: [
+      {
+        breakpoint: 2600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          arrows: "red",
+        },
+      },
       {
         breakpoint: 1980,
         settings: {
@@ -83,7 +92,7 @@ const TestimonialSection = () => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
         },
       },
@@ -123,7 +132,7 @@ const TestimonialSection = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="lg:w-[30%] relative group md:w-[25%]"
+              className="lg:w-[30%] w-[300px] relative group md:w-[25%]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -143,9 +152,9 @@ const TestimonialSection = () => {
                   className="w-auto  h-auto"
                 />
               </motion.div>
-              <div className="p-4 w-full h-full bg-teal-600 group-hover:block  text-center hidden absolute top-0 left-0">
+              <div className="p-4 w-full h-full bg-gradient-to-b from-teal-500 to-gary-300 group-hover:block  text-center hidden absolute top-0 left-0">
                 <motion.h3
-                  className="text-xl group-hover:text-white font-bold dark:text-white text-gray-800 mb-2"
+                  className="text-2xl group-hover:text-white font-bold dark:text-white text-gray-800 mb-2"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}

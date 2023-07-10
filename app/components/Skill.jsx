@@ -23,7 +23,6 @@ const SkillSection = () => {
 
   const skills = [
     { name: "JavaScript", icon: <FaJs size={80} /> },
-
     { name: "React.js", icon: <FaReact size={80} /> },
     { name: "Next.js", icon: <FaCode size={80} /> },
     { name: "MongoDB", icon: <FaDatabase size={80} /> },
@@ -38,7 +37,7 @@ const SkillSection = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="w-[100%] hover:bg-teal-500 group transition-all md:w-[45%] lg:w-[30%] bg-white rounded-lg shadow-md  mx-1"
+            className="w-[100%] hover:bg-teal-500 dark:hover:bg-gradient-to-b dark:hover:from-teal-500 dark:hover:to-gary-300 group transition-all md:w-[45%] lg:w-[30%] bg-white dark:bg-gray-900 dark:text-white rounded-lg dark:shadow-gray-700 shadow-md  mx-1"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -46,10 +45,10 @@ const SkillSection = () => {
           >
             <div className="px-5 py-10">
               <div className="md:flex lg:flex items-center  justify-center text-center mb-4 gap-2">
-                <span className="text-teal-500 group-hover:text-white inline-block">
+                <span className="text-teal-500 dark:text-white group-hover:text-white inline-block">
                   {skill.icon}
                 </span>
-                <h3 className="text-lg font-bold  group-hover:text-white text-gray-800">
+                <h3 className="text-2xl font-bold dark:text-white group-hover:text-white text-gray-800">
                   {skill.name}
                 </h3>
               </div>
