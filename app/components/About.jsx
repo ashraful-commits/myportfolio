@@ -19,7 +19,7 @@ const AboutSection = () => {
     <Section
       title="About me"
       subtitle="Who am I ?"
-      discription="I am md. ashraful alam. I'm Mern stack developer"
+      discription="I am a professional MERN stack developer with a passion for creating high-quality web applications. With years of experience in front-end and back-end development, I specialize in building scalable and efficient solutions. My expertise includes React, Node.js, Express, and MongoDB."
       button="Download Cv"
     >
       <motion.div
