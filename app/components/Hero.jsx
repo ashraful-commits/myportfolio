@@ -32,7 +32,7 @@ const Hero = ({ children }) => {
   }, []);
   return (
     <div className="text-gray-900 bg-white dark:bg-gray-900 min-h-screen dark:text-white py-16">
-      <div className="container mx-auto mt-32">
+      <div className="container mx-auto md:mt-20 lg:mt-32">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-8 md:flex justify-center">
             <span className="text-gray-500 dark:text-teal-600">

@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
     };
   }, [setHideNav]);
   return (
-    <div>
+    <div className="max-w-[1200px] mx-auto">
       <header
         className={`bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
       >
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
           }`}
         >
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-teal-600 uppercase">
+            <h1 className="text-xl  font-bold text-teal-600 uppercase">
               Md Ashraful Alam
             </h1>
           </div>
@@ -110,15 +110,15 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="relative group h-8 overflow-hidden border-b p-2 "
+                className="relative group h-8 overflow-hidden p-1 "
               >
                 <Link href="#home">
-                  <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
+                  <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
                       className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
+                    <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Home
                     </span>
                   </span>
@@ -128,15 +128,15 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#about">
-                  <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
+                  <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
                       className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
+                    <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       About
                     </span>
                   </span>
@@ -146,15 +146,15 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#projects">
-                  <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
+                  <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
                       className="text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className=" dark:text-white  font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
+                    <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Projects
                     </span>
                   </span>
@@ -164,15 +164,15 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#testimonial">
-                  <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
+                  <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
                       className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
+                    <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Testimonial
                     </span>
                   </span>
@@ -182,15 +182,15 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#contact">
-                  <span className="flex items-center flex-col space-x-2 text-gray-900 dark:text-white cursor-pointer">
+                  <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
                       className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
-                    <span className="text-teal-5000 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
+                    <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Contact
                     </span>
                   </span>
@@ -206,7 +206,7 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#home">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
@@ -222,7 +222,7 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#about">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
@@ -238,7 +238,7 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#projects">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
@@ -254,7 +254,7 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#testimonial">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
@@ -272,7 +272,7 @@ const Layout = ({ children }) => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="relative group h-8 overflow-hidden border-b p-2"
+                className="relative group h-8 overflow-hidden p-1"
               >
                 <Link href="#contact">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">

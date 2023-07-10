@@ -12,6 +12,8 @@ import AboutSection from "./components/About";
 import PortfolioSection from "./components/Porfolio";
 import SkillSection from "./components/Skill";
 import TestimonialSection from "./components/Testimonial";
+import Contact from "./components/Contact";
+import Divider from "./Divider";
 
 const Home = () => {
   useEffect(() => {
@@ -24,37 +26,17 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <div className="flex w-screen h-[.5px]  justify-center items-center">
-        <span className="md:w-[10%] lg:w-[10%] w-[50%] h-[.5px] bg-gray-100"></span>
-        <span className="w-5 h-5 rounded-full bg-teal-500 mx-5"></span>
-        <span className="md:w-[90%] lg:w-[90%] w-[50%] h-[.5px] bg-gray-100"></span>
-      </div>
+      <Divider />
       <AboutSection />
-      <div className="flex w-screen h-[.5px]  justify-center items-center">
-        <span className="md:w-[10%] lg:w-[10%] w-[50%] h-[.5px] bg-gray-100"></span>
-        <span className="w-5 h-5 rounded-full bg-teal-500 mx-5"></span>
-        <span className="md:w-[90%] lg:w-[90%] w-[50%] h-[.5px] bg-gray-100"></span>
-      </div>
+      <Divider />
       <PortfolioSection />
-
-      <div className="flex w-screen h-[.5px]  justify-center items-center">
-        <span className="md:w-[10%] lg:w-[10%] w-[50%] h-[.5px] bg-gray-100"></span>
-        <span className="w-5 h-5 rounded-full bg-teal-500 mx-5"></span>
-        <span className="md:w-[90%] lg:w-[90%] w-[50%] h-[.5px] bg-gray-100"></span>
-      </div>
+      <Divider />
       <SkillSection />
-
-      <div className="flex w-screen h-[.5px]  justify-center items-center">
-        <span className="md:w-[10%] lg:w-[10%] w-[50%] h-[.5px] bg-gray-100"></span>
-        <span className="w-5 h-5 rounded-full bg-teal-500 mx-5"></span>
-        <span className="md:w-[90%] lg:w-[90%] w-[50%] h-[.5px] bg-gray-100"></span>
-      </div>
+      <Divider />
       <TestimonialSection />
-      <div className="flex w-screen h-[.5px] justify-center items-center">
-        <span className="w-[50%] h-[.5px] bg-gray-100"></span>
-        <span className="w-5 h-5 rounded-full bg-teal-500 mx-5"></span>
-        <span className="w-[50%] h-[.5px] bg-gray-100"></span>
-      </div>
+      <Divider />
+      <Contact />
+      <Divider />
       <footer className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-10">
         <div className="container mx-auto text-center">
           <p>

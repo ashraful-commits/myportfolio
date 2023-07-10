@@ -3,12 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "tailwindcss/tailwind.css";
-@import "aos/dist/aos.css";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Maven pro;
+}
+
+p {
+  color: rgb(170, 168, 168);
 }
