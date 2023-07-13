@@ -132,7 +132,7 @@ const TestimonialSection = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="lg:w-[30%] w-[300px] relative group md:w-[25%]"
+              className="lg:w-[50%] w-[100%] relative group md:w-[25%]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}

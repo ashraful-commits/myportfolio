@@ -21,7 +21,7 @@ const Section = ({ children, title, subtitle, discription, button }) => {
             </h4>
           )}
           {discription && (
-            <p className="text-gray-500 w-[500px] capitalize my-2 text-xl">
+            <p className="text-gray-500 w-[50%] capitalize my-2 text-xl">
               {discription}
             </p>
           )}
