@@ -26,6 +26,7 @@ const PortfolioSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: food,
       githubLink: "https://github.com/your-username/project1",
+      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "https://project1-live-site.com",
     },
     {
@@ -33,6 +34,7 @@ const PortfolioSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: movie,
       githubLink: "https://github.com/your-username/project1",
+      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "https://project1-live-site.com",
     },
     {
@@ -40,6 +42,7 @@ const PortfolioSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: electronics,
       githubLink: "https://github.com/your-username/project1",
+      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "https://project1-live-site.com",
     },
     {
@@ -47,6 +50,7 @@ const PortfolioSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: car,
       githubLink: "https://github.com/your-username/project1",
+      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "https://project1-live-site.com",
     },
     {
@@ -54,6 +58,7 @@ const PortfolioSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: education,
       githubLink: "https://github.com/your-username/project1",
+      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "https://project1-live-site.com",
     },
     {
@@ -61,6 +66,7 @@ const PortfolioSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: ecommerce,
       githubLink: "https://github.com/your-username/project1",
+      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "https://project1-live-site.com",
     },
   ];
@@ -113,6 +119,18 @@ const PortfolioSection = () => {
               >
                 {project.description}
               </motion.p>
+
+              <motion.div
+                className="flex items-center group-hover:text-white justify-center mt-4  dark:text-white"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                <h4 className="text-xl">Tools:</h4>
+                {project.tools.map((item, index) => {
+                  return <span key={index}>{item},</span>;
+                })}
+              </motion.div>
               <motion.div
                 className="flex group-hover:text-white justify-center mt-4  dark:text-white"
                 initial={{ opacity: 0, y: 10 }}
