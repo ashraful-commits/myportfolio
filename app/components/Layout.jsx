@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import {
@@ -13,6 +13,7 @@ import {
   FaTimes,
   FaUser,
 } from "react-icons/fa";
+import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,7 +21,7 @@ import "aos/dist/aos.css";
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
-
+  const [isVisible, setIsVisible] = useState(true);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -35,51 +36,65 @@ const Layout = ({ children }) => {
       once: true,
     });
   }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY < 1000 || window.scrollY);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="max-w-screen  mx-auto dark:bg-gray-900">
       <header
-        className={`bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
+        style={{ display: isVisible ? "block" : "none" }}
+        className={`bg-white w-full z-[99999] fixed top-0 left-0 dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
       >
         <nav
-          className={`flex items-center lg:px-10 md:px-10 top-0 z-30 justify-between `}
+          className={`flex items-center lg:px-10 md:px-10  z-30 justify-between `}
         >
           <div className="flex items-center">
-            <h1 className="text-xl  font-bold text-teal-600 uppercase">
-              Md Ashraful Alam
-            </h1>
+            <h1 className="text-xl  font-bold text-teal-600 uppercase">maa</h1>
           </div>
-          <div className="md:hidden">
-            <motion.button
-              className="text-white focus:outline-none"
-              onClick={toggleMenu}
-              aria-label="Toggle Menu"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              {isMenuOpen ? (
-                <FaTimes className="text-gray-900 dark:text-white" size={24} />
-              ) : (
-                <FaBars className="text-gray-900 dark:text-white" size={24} />
-              )}
-            </motion.button>
-          </div>
+          <motion.button
+            className="text-white lg:ml-60 ml- focus:outline-none"
+            onClick={toggleTheme}
+            aria-label="Toggle Dark Mode"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            {theme === "dark" ? (
+              <FaMoon className="text-gray-900 dark:text-white" />
+            ) : (
+              <FaSun className="text-gray-900 dark:text-white" />
+            )}
+          </motion.button>
           <div>
-            <motion.button
-              className="text-white ml- focus:outline-none"
-              onClick={toggleTheme}
-              aria-label="Toggle Dark Mode"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              {theme === "dark" ? (
-                <FaMoon className="text-gray-900 dark:text-white" />
-              ) : (
-                <FaSun className="text-gray-900 dark:text-white" />
-              )}
-            </motion.button>
+            <div className="md:hidden">
+              <motion.button
+                className="text-white focus:outline-none"
+                onClick={toggleMenu}
+                aria-label="Toggle Menu"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                {isMenuOpen ? (
+                  <FaTimes
+                    className="text-gray-900 dark:text-white"
+                    size={24}
+                  />
+                ) : (
+                  <BiMenuAltRight
+                    className="text-gray-900 dark:text-white"
+                    size={24}
+                  />
+                )}
+              </motion.button>
+            </div>
           </div>
           <div className="hidden md:flex items-center">
             <ul className="text-gray-900 dark:text-white flex">

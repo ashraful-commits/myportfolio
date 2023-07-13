@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
 
         <div class="mt-10 flex flex-col items-center justify-center px-10 w-full">
-          <form class="w-[100%] border p-10 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
+          <form class="w-[100%] border p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
             <div className="w-full">
               <div class="flex items-center justify-between">
                 <label
@@ -39,7 +39,7 @@ const Contact = () => {
                   placeholder="Email"
                   autocomplete="current-password"
                   required
-                  class=" px-3 h-[50px] block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
+                  class=" px-3 h-[50px] dark:bg-white block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
                 />
               </div>
             </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                   placeholder="Password"
                   autocomplete="current-password"
                   required
-                  class="px-3 block h-[50px] w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
+                  class="px-3 block dark:bg-white h-[50px] w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
                 />
               </div>
             </div>
