@@ -26,17 +26,16 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <Divider />
+
       <AboutSection />
-      <Divider />
+
       <PortfolioSection />
-      <Divider />
+
       <SkillSection />
-      <Divider />
+
       <TestimonialSection />
-      <Divider />
+
       <Contact />
-      <Divider />
 
       <footer className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-10">
         <div className="container mx-auto text-center">

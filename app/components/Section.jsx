@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { FaArrowDown } from "react-icons/fa";
+import Divider from "../Divider";
 
 const Section = ({ children, title, subtitle, discription, button }) => {
   return (
@@ -11,10 +12,11 @@ const Section = ({ children, title, subtitle, discription, button }) => {
       <div className=" text-center w-full flex flex-col gap-14 justify-center item-center">
         <div className="flex items-center flex-col">
           {title && (
-            <h2 className="text-5xl capitalize text-gray-600 font-bold my-5 dark:text-gray-300 ">
+            <h2 className="text-[5rem] capitalize text-gray-600 font-bold my-5 dark:text-gray-300 ">
               {title}
             </h2>
           )}
+          <Divider />
           {subtitle && (
             <h4 className="text-3xl capitalize text-gray-400 font-bold my-2">
               {subtitle}

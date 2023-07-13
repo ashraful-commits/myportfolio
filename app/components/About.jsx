@@ -23,7 +23,7 @@ const AboutSection = () => {
       button="Download Cv"
     >
       <motion.div
-        className="flex justify-center sm:my-10"
+        className="flex justify-center sm:my-10 "
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -33,15 +33,16 @@ const AboutSection = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className=" rounded-full w-[350px] h-[350px] overflow-hidden border-4 border-white"
+          className=" bg-teal-900 rounded-full w-[350px] h-[350px]   border-4 overflow-hidden  border-teal-500 relative z-1 flex justify-center "
         >
           <Image
             src={web}
             alt="Profile"
             width={350}
-            height={100}
-            className=" rounded-full"
+            height={350}
+            className=" rounded-full mix-blend-screen relative z-20 h-[110%]  w-[100%]  "
           />
+          <div className="overlay absolute w-full h-full   bg-gray-900 z-19"></div>
         </motion.div>
       </motion.div>
     </Section>

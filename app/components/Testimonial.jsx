@@ -127,8 +127,8 @@ const TestimonialSection = () => {
       discription=""
       button=""
     >
-      <div className="lg:w-[70%] my-5 lg:my-0 md:my-0 md:w-[70%] ">
-        <Slider {...settings} className="w-[100%]">
+      <div className="lg:w-[70%] w-[100%] my-5 lg:my-0 md:my-0 md:w-[70%] ">
+        <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}

@@ -68,15 +68,15 @@ const PortfolioSection = () => {
   return (
     <Section
       title="Projects"
-      subtitle="What i have build"
+      subtitle="What i have build !"
       discription=""
       button=""
     >
-      <div className="lg:flex lg:w-[70%] md:flex-wrap md:justify-center lg:justify-center md:items-center lg:items-center lg:flex-wrap  dark:bg-gray-900 dark:text-white md:flex gap-3">
+      <div className="w-[100%] lg:px-52 md:px-30  flex flex-wrap gap-5 items-center justify-center">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white my-10 relative group overflow-hidden  lg:w-[30%] md:w-[45%] dark:bg-gray-900 dark:text-white rounded-lg shadow-md "
+            className="bg-white px-30 lg:w-[30%] md:w-[45%] w-[100%] my-10 relative group overflow-hidden h-auto dark:bg-gray-900  dark:text-white rounded-lg shadow-md "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -91,8 +91,9 @@ const PortfolioSection = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                fill
-                className="w-auto h-full"
+                width={700}
+                height={500}
+                className="w-[100%] object-cover h-full"
               />
             </motion.div>
             <div className="p-4 w-full h-full bg-gradient-to-b from-teal-500 to-gray-300 group-hover:block  hidden absolute top-0 left-0 transition-all delay-100 duration-100">
