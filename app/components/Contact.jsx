@@ -4,7 +4,7 @@ import Image from "next/image";
 import contact from "../../public/Programmer-Engineering-Development-Illustration-on-transparent-background-PNG.png";
 const Contact = () => {
   return (
-    <Section title="Contact" subtitle="Let's connect">
+    <Section title="Contact" subtitle="Let's connect !">
       <div class="flex min-h-full w-full flex-col items-center justify-center px-2 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
@@ -26,7 +26,7 @@ const Contact = () => {
               <div class="flex items-center justify-between">
                 <label
                   for="password"
-                  class="block text-sm font-medium dark:text-white leading-6 text-gray-900"
+                  class="block text-lg font-medium dark:text-white leading-6 text-gray-900"
                 >
                   Email
                 </label>
@@ -39,7 +39,7 @@ const Contact = () => {
                   placeholder="Email"
                   autocomplete="current-password"
                   required
-                  class=" px-3 block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
+                  class=" px-3 h-[50px] block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
                 />
               </div>
             </div>
@@ -47,7 +47,7 @@ const Contact = () => {
               <div class="flex items-center justify-between">
                 <label
                   for="password"
-                  class="block text-sm font-medium dark:text-white leading-6 text-gray-900"
+                  class="block text-lg font-medium dark:text-white leading-6 text-gray-900"
                 >
                   Password
                 </label>
@@ -60,7 +60,7 @@ const Contact = () => {
                   placeholder="Password"
                   autocomplete="current-password"
                   required
-                  class="px-3 block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
+                  class="px-3 block h-[50px] w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
                 />
               </div>
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </form>
 
-          <p class="mt-10 text-center text-sm text-gray-500">Contact me !</p>
+          <p class="mt-10 text-center text-2xl text-gray-500">Contact me !</p>
         </div>
       </div>
     </Section>
