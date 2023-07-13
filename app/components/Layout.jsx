@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
           className={`flex items-center lg:px-10 md:px-10  z-30 justify-between `}
         >
           <div className="flex items-center">
-            <h1 className="text-xl  font-bold text-teal-600 uppercase">maa</h1>
+            <h1 className="text-xl  font-bold text-teal-600 lowercase">{`</code>`}</h1>
           </div>
           <motion.button
             className="text-white lg:ml-60 ml- focus:outline-none"
