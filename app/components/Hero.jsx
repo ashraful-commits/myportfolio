@@ -40,7 +40,7 @@ const Hero = ({ children }) => {
       <div className="container w-screen h-screen  mx-auto flex justify-center items-center ">
         <div className="hero-container w-screen h-screen  mx-auto flex justify-center items-center">
           <div className="text-center">
-            <h1 className="lg:text-[4.5rem] md:text-[3.8rem] text-[3rem] font-bold mb-8 md:flex justify-center">
+            <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem] font-bold mb-8 md:flex justify-center">
               <span className="text-gray-500 dark:text-teal-600">
                 Hi, I&apos;m
               </span>

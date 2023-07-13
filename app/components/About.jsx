@@ -33,7 +33,7 @@ const AboutSection = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className=" bg-teal-900 rounded-full w-[350px] h-[350px]   border-4 overflow-hidden  border-teal-500 relative z-1 flex justify-center "
+          className=" bg-teal-900 rounded-full w-[350px] h-[350px]   border-4 overflow-hidden  border-white relative z-1 flex justify-center "
         >
           <Image
             src={web}
