@@ -126,9 +126,13 @@ const PortfolioSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <h4 className="text-xl">Tools:</h4>
+                <h4 className="text-lg">Tools:</h4>
                 {project.tools.map((item, index) => {
-                  return <span key={index}>{item},</span>;
+                  return (
+                    <span className="inline" key={index}>
+                      {item},
+                    </span>
+                  );
                 })}
               </motion.div>
               <motion.div

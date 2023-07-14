@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "git-commands": "git init && git add . && git commit -m 'changing' && git push"
   },
   "dependencies": {
     "aos": "^2.3.4",
