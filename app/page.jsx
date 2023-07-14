@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout id="/">
       <Hero />
 
       <AboutSection />

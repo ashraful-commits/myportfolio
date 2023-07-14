@@ -106,6 +106,7 @@ const TestimonialSection = () => {
   return (
     <Section
       title="testimonial"
+      id="testimonial"
       subtitle="Who comment's?"
       discription=""
       button=""

@@ -50,13 +50,13 @@ const Layout = ({ children }) => {
     <div className="max-w-screen  mx-auto dark:bg-gray-900">
       <header
         style={{ display: isVisible ? "block" : "none" }}
-        className={`bg-white w-full z-[99999] fixed top-0 left-0 dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
+        className={` w-full z-[99999] fixed top-0 left-0 bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
       >
         <nav
           className={`flex items-center lg:px-10 md:px-10  z-30 justify-between `}
         >
           <div className="flex items-center">
-            <h1 className="text-xl  font-bold text-teal-600 lowercase">{`</code>`}</h1>
+            <h1 className="text-xl  font-bold text-teal-600 dark:text-white lowercase">{`</code>`}</h1>
           </div>
           <motion.button
             className="text-white lg:ml-60 ml- focus:outline-none"
@@ -108,7 +108,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Home
@@ -126,7 +126,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       About
@@ -162,7 +162,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Testimonial
@@ -180,7 +180,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className="text-teal-500 dark:text-white font-bold  opacity-0 group-hover:-translate-y-6 delay-100 transition-all duration-100 group-hover:opacity-100 hover:shadow-2xl flex flex-col">
                       Contact
@@ -204,7 +204,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">Home</span>
                   </span>
@@ -220,7 +220,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold ">About</span>
                   </span>
@@ -236,7 +236,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">Projects</span>
                   </span>
@@ -252,7 +252,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">
                       Testimonial
@@ -270,7 +270,7 @@ const Layout = ({ children }) => {
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
-                      className=" text-teal-600 dark:text-white  shadow-white shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
+                      className=" text-teal-600 dark:text-white  shadow-white font-extrabold shadow-2xl hover:text-teal-700 opacity-100 group-hover:opacity-0"
                     />
                     <span className=" text-teal-800 font-bold  ">Contact</span>
                   </span>

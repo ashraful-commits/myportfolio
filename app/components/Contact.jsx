@@ -4,7 +4,7 @@ import Image from "next/image";
 import contact from "../../public/Programmer-Engineering-Development-Illustration-on-transparent-background-PNG.png";
 const Contact = () => {
   return (
-    <Section title="Contact" subtitle="Let's connect !">
+    <Section id="contact" title="Contact" subtitle="Let's connect !">
       <div class="flex min-h-full w-full flex-col items-center justify-center px-2 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
@@ -49,19 +49,21 @@ const Contact = () => {
                   for="password"
                   class="block text-lg font-medium dark:text-white leading-6 text-gray-900"
                 >
-                  Password
+                  Message
                 </label>
               </div>
               <div class="mt-2 ">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  autocomplete="current-password"
+                <textarea
+                  id="messge"
+                  name="messge"
+                  type="messge"
+                  placeholder="Message"
                   required
                   class="px-3 block dark:bg-white h-[50px] w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
-                />
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <input />
               </div>
             </div>
 
@@ -70,7 +72,7 @@ const Contact = () => {
                 type="submit"
                 class="flex w-full justify-center rounded-md bg-teal-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign in
+                Send
               </button>
             </div>
           </form>
