@@ -60,7 +60,7 @@ const Hero = ({ children }) => {
   return (
     <div
       ref={heroRef}
-      className={`relative text-gray-900 bg-blend-screen z-[500] mt-52 lg:mt-28 md:mt-20  mb-32 to-white dark:bg-transparent min-h-screen dark:text-white`}
+      className={`relative text-gray-900 bg-blend-screen z-[500] pt-52 lg:pt-28 md:pt-20  mb-32 to-white dark:bg-transparent min-h-screen dark:text-white`}
     >
       <div className="relative container w-screen h-screen  mx-auto flex justify-center items-center ">
         <div className="hero-container w-screen h-screen  mx-auto flex justify-center items-center">
