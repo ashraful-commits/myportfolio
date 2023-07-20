@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
-import Particles from "react-tsparticles";
+
 import { loadFull } from "tsparticles";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import hover3d from "../utility/hover3d";
+
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
@@ -49,17 +49,10 @@ const Hero = ({ children }) => {
     fade: true,
     cssEase: "linear",
   };
-  const heroRef = useRef(null);
-
-  const heroHover = hover3d(heroRef, {
-    x: 30,
-    y: -40,
-    z: 30,
-  });
 
   return (
     <div
-      ref={heroRef}
+  
       className={`relative text-gray-900 bg-blend-screen z-[500] pt-52 lg:pt-28 md:pt-20  mb-32 to-white dark:bg-transparent min-h-screen dark:text-white`}
     >
       <div className="relative container w-screen h-screen  mx-auto flex justify-center items-center ">
@@ -111,7 +104,7 @@ const Hero = ({ children }) => {
               </span>
             </div>
             <motion.button
-              style={{ transfrom: heroHover.transfrom }}
+       
               className="px-8  hover:shadow-2xl text-2xl hover:shadow-white font-bold py-3 my-5 bg-teal-500 text-white rounded hover:bg-teal-600 transition-colors duration-300"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
