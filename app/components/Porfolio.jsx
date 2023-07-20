@@ -82,7 +82,7 @@ const PortfolioSection = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white border-2 border-white px-30 lg:w-[30%] md:w-[45%] w-[100%] mb-2 relative group overflow-hidden h-[30vh] md:h-[50vh] sm:h-auto dark:bg-gray-900  dark:text-white rounded-lg shadow-md "
+            className="bg-white border-2 border-white px-30 lg:w-[30%] md:w-[45%] w-[100%] mb-2 relative group overflow-hidden lg:h-[30vh] md:h-[50vh] sm:h-auto dark:bg-gray-900  dark:text-white rounded-lg shadow-md "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}

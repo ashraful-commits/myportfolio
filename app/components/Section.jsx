@@ -22,7 +22,7 @@ const Section = ({ children, title, subtitle, discription, button }) => {
               {subtitle}
             </h4>
           )}
-          {/* <Divider /> */}
+          <Divider />
           {discription && (
             <p className="text-gray-500 bg-white p-5 dark:bg-gray-900 w-[90%] text-justify indent-20 lg:w-[55%] capitalize my-2 text-xl">
               {discription}
