@@ -10,10 +10,10 @@ const Section = ({ children, title, subtitle, discription, button }) => {
       className="w-full relative z-[500]  dark:bg-transparent text-gray-900 dark:text-white flex justify-center min-h-screen mx-auto items-center "
     >
        
-      <div className=" text-center w-full flex flex-col gap-14 justify-center item-center">
-        <div className="flex items-center justify-center flex-col">
+      <div className=" text-center w-full my-20  flex flex-col gap-14 justify-center item-center">
+        <div className="flex items-center  justify-center flex-col">
           {title && (
-            <h2 className="lg:text-[4.5rem]  bg-white dark:bg-slate-800 px-20 border-2 dark:border-[2px] dark:border-gray-800 md:text-[3rem] text-[4rem] capitalize text-gray-600 font-bold my-5 dark:text-gray-300 ">
+            <h2 className="lg:text-[4.5rem] rounded-lg  bg-white dark:bg-slate-800 px-20 border-2 dark:border-[2px] dark:border-gray-800 md:text-[3rem] text-[4rem] capitalize text-gray-600 font-bold my-5 dark:text-gray-300 ">
               {title}
             </h2>
           )}

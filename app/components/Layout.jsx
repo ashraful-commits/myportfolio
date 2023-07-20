@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
       <Line/>
       <header
         style={{ display: isVisible ? "block" : "none" }}
-        className={`border-b-2 dark:border-b-gray-800 w-full z-[99999] fixed top-0 left-0 bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
+        className={`border-b-2 dark:border-b-gray-800 w-full z-[99999] fixed top-0 left-0 bg-white dark:bg-slate-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
       >
         <nav
           className={`flex items-center lg:px-10 md:px-10  z-30 justify-between `}

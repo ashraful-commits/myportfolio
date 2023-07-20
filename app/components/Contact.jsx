@@ -8,20 +8,20 @@ const Contact = () => {
       <div class="flex min-h-full w-full flex-col items-center justify-center px-2 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
-            class="mx-auto h-10 w-auto"
+            class="mx-auto h-[24vh] w-auto"
             src={contact}
             alt="Your Company"
             width={200}
             height={200}
             className="w-full h-full"
           />
-          <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">
+          <h2 class="mt-10 text-center text-3xl dark:bg-slate-900 bg-white p-5 font-bold leading-9 tracking-tight text-gray-900 dark:text-white">
             Sign in to your account
           </h2>
         </div>
 
         <div class="mt-10 flex flex-col items-center justify-center px-10 w-full">
-          <form class="w-[100%] border border-gray-800 bg-white dark:bg-gray-800 p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
+          <form class="w-[100%] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
             <div className="w-full">
               <div class="flex items-center justify-between">
                 <label

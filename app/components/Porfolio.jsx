@@ -78,11 +78,11 @@ const PortfolioSection = () => {
       discription=""
       button=""
     >
-      <div className="w-[100%] lg:px-52 md:px-10 px-10  flex flex-wrap gap-5 items-center justify-center">
+      <div className="w-[100%] lg:px-[150px] md:px-10 px-10  flex flex-wrap gap-5 items-center justify-center">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white border-2 border-white px-30 lg:w-[30%] md:w-[45%] w-[100%] mb-2 relative group overflow-hidden lg:h-[30vh] md:h-[50vh] sm:h-auto dark:bg-gray-900  dark:text-white rounded-lg shadow-md "
+            className="bg-white border-2  border-gray-100 dark:border-gray-800 px-30 lg:w-[30%] md:w-[45%] w-[100%] mb-2 relative group overflow-hidden lg:h-[30vh] md:h-[50vh] sm:h-auto dark:bg-gray-900  dark:text-white rounded-lg "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -102,7 +102,7 @@ const PortfolioSection = () => {
                 className="w-[100%] object-cover h-full"
               />
             </motion.div>
-            <div className="p-4 w-full h-full bg-gradient-to-b from-teal-500 to-gray-300 group-hover:block  hidden absolute top-0 left-0 transition-all delay-100 duration-100">
+            <div className="p-4 w-full h-full bg-gradient-to-b from-teal-500 to-teal-900 group-hover:block  hidden absolute top-0 left-0 transition-all delay-100 duration-100">
               <motion.h3
                 className="text-2xl group-hover:text-white font-bold dark:text-white text-gray-800 mb-2"
                 initial={{ opacity: 0, y: 10 }}

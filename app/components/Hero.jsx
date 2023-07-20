@@ -60,12 +60,12 @@ const Hero = ({ children }) => {
   return (
     <div
       ref={heroRef}
-      className={`relative text-gray-900 bg-blend-screen z-[500]   to-white dark:bg-transparent min-h-screen dark:text-white`}
+      className={`relative text-gray-900 bg-blend-screen z-[500] mt-52 lg:mt-28 md:mt-20  mb-32 to-white dark:bg-transparent min-h-screen dark:text-white`}
     >
       <div className="relative container w-screen h-screen  mx-auto flex justify-center items-center ">
         <div className="hero-container w-screen h-screen  mx-auto flex justify-center items-center">
           <div className="text-center">
-            <h1 className="lg:text-[5.6rem] bg-white dark:bg-slate-900  md:text-[4rem] text-[3rem] font-bold mb-8 md:flex justify-center">
+            <h1 className="lg:text-[6rem] bg-white leading-tight dark:bg-slate-900  md:text-[4rem] text-[5rem] font-bold mb-8 md:flex justify-center">
               <span className="text-gray-600 dark:text-teal-600">
                 Hi, I&apos;m
               </span>
@@ -73,7 +73,7 @@ const Hero = ({ children }) => {
                 Md Ashraful Alam
               </span>
             </h1>
-            <h1 className="text-[3rem] bg-white dark:bg-slate-900  font-bold mb-8 md:flex text-gray-600 dark:text-white justify-center">
+            <h1 className="text-[3rem] flex-col md:flex-row bg-white dark:bg-slate-900  font-bold mb-8 md:flex text-gray-600 dark:text-white justify-center">
               I &apos;m
               <span className=" text-teal-500 mx-2 font-light">
                 <Typewriter

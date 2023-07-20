@@ -40,7 +40,7 @@ const Home = () => {
 
       <footer className="bg-white relative z-[600] dark:bg-gray-900 text-gray-900 dark:text-white py-10">
         <div className="container   mx-auto text-center">
-          <p className="bg-white border border-gray-800 relative inline-block z-[500] dark:bg-gray-900 p-5">
+          <p className="bg-white  relative inline-block z-[500] dark:bg-gray-900 p-5">
             &copy; {new Date().getFullYear()} mdashrafulalam. All rights
             reserved.
           </p>
