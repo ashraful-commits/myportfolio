@@ -13,8 +13,8 @@ import PortfolioSection from "./components/Porfolio";
 import SkillSection from "./components/Skill";
 import TestimonialSection from "./components/Testimonial";
 import Contact from "./components/Contact";
-import Divider from "./Divider";
-import ParallaxComponent from "../app/components/Paralax";
+
+
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -36,6 +36,7 @@ const Home = () => {
       <TestimonialSection />
 
       <Contact />
+    
 
       <footer className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-10">
         <div className="container mx-auto text-center">

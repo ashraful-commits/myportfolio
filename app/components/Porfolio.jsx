@@ -82,7 +82,7 @@ const PortfolioSection = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white border-2 border-white px-30 lg:w-[30%] md:w-[45%] w-[100%] mb-2 relative group overflow-hidden h-auto dark:bg-gray-900  dark:text-white rounded-lg shadow-md "
+            className="bg-white border-2 border-white px-30 lg:w-[30%] md:w-[45%] w-[100%] mb-2 relative group overflow-hidden h-[30vh] dark:bg-gray-900  dark:text-white rounded-lg shadow-md "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -126,14 +126,16 @@ const PortfolioSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <h4 className="text-lg">Tools:</h4>
-                {project.tools.map((item, index) => {
+                <h4 className="text-lg ">Tools:</h4>
+                <ul className="flex flex-wrap"> {project.tools.map((item, index) => {
+                  
                   return (
-                    <span className="inline" key={index}>
+                    <li className="" key={index}>
                       {item},
-                    </span>
+                    </li>
                   );
-                })}
+                })}</ul>
+               
               </motion.div>
               <motion.div
                 className="flex group-hover:text-white justify-center mt-4  dark:text-white"

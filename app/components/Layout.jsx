@@ -17,6 +17,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Line from "./Line/Line";
 
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,10 +48,11 @@ const Layout = ({ children }) => {
     };
   }, []);
   return (
-    <div className="max-w-screen  mx-auto dark:bg-gray-900">
+    <div className="max-w-screen z-[500] relative mx-auto dark:bg-slate-900">
+      <Line/>
       <header
         style={{ display: isVisible ? "block" : "none" }}
-        className={` w-full z-[99999] fixed top-0 left-0 bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
+        className={`border-b-2 dark:border-b-gray-800 w-full z-[99999] fixed top-0 left-0 bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-4 lg:px-10 md:px-10 px-12 `}
       >
         <nav
           className={`flex items-center lg:px-10 md:px-10  z-30 justify-between `}
@@ -280,7 +282,7 @@ const Layout = ({ children }) => {
           </div>
         )}
       </header>
-      <main>{children}</main>
+      <main className="">{children}</main>
     </div>
   );
 };
