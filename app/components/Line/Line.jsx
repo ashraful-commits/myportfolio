@@ -5,16 +5,16 @@ const Line = () => {
 
 
     <div className="w-full h-full flex justify-between  ">
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
-        <span className="w-[2px] h-full bg-gray-200 opacity-50 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
+        <span className="w-[2px] h-full bg-gray-200 opacity-30 dark:bg-gray-600 dark:opacity-10"></span>
        
         
         

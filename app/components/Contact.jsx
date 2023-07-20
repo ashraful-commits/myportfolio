@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
 
         <div class="mt-10 flex flex-col items-center justify-center px-10 w-full">
-          <form class="w-[100%] border bg-white dark:bg-gray-900 p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
+          <form class="w-[100%] border border-gray-800 bg-white dark:bg-gray-800 p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
             <div className="w-full">
               <div class="flex items-center justify-between">
                 <label

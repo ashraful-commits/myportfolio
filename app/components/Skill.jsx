@@ -13,6 +13,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Section from "./Section";
+import { BiLogoRedux, BiLogoTypescript } from "react-icons/bi";
+import { TbBrandFramer, TbBrandNextjs } from "react-icons/tb";
 const SkillSection = () => {
   useEffect(() => {
     AOS.init({
@@ -28,6 +30,10 @@ const SkillSection = () => {
     { name: "MongoDB", icon: <FaDatabase size={80} /> },
     { name: "Node.js", icon: <FaNodeJs size={80} /> },
     { name: "Express.js", icon: <FaServer size={80} /> },
+    { name: "TypeScript.js", icon: <BiLogoTypescript size={80} /> },
+    { name: "Redux", icon: <BiLogoRedux size={80} /> },
+    { name: "Next.js", icon: <TbBrandNextjs size={80} /> },
+    { name: "Framer Motion", icon: <TbBrandFramer size={80} /> },
     // Add more skills here
   ];
 
@@ -37,7 +43,7 @@ const SkillSection = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="w-[100%] px-10 hover:bg-teal-500 dark:hover:bg-gradient-to-b dark:hover:from-teal-500 dark:hover:to-gary-300 group transition-all md:w-[45%] lg:w-[30%] bg-white dark:bg-gray-900 dark:text-white rounded-lg dark:shadow-gray-700 shadow-md  mx-1"
+            className="w-[100%] px-10 hover:bg-teal-500 dark:hover:bg-gradient-to-b dark:hover:from-teal-500 dark:hover:to-gary-300 group transition-all md:w-[45%] lg:w-[30%] bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-md  mx-1"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}

@@ -60,12 +60,12 @@ const Hero = ({ children }) => {
   return (
     <div
       ref={heroRef}
-      className={`relative text-gray-900 bg-blend-screen z-[500]   to-white dark:bg-gray-900 min-h-screen dark:text-white`}
+      className={`relative text-gray-900 bg-blend-screen z-[500]   to-white dark:bg-transparent min-h-screen dark:text-white`}
     >
       <div className="relative container w-screen h-screen  mx-auto flex justify-center items-center ">
         <div className="hero-container w-screen h-screen  mx-auto flex justify-center items-center">
           <div className="text-center">
-            <h1 className="lg:text-[5.6rem] md:text-[4rem] text-[3rem] font-bold mb-8 md:flex justify-center">
+            <h1 className="lg:text-[5.6rem] bg-white dark:bg-slate-900  md:text-[4rem] text-[3rem] font-bold mb-8 md:flex justify-center">
               <span className="text-gray-600 dark:text-teal-600">
                 Hi, I&apos;m
               </span>
@@ -73,7 +73,7 @@ const Hero = ({ children }) => {
                 Md Ashraful Alam
               </span>
             </h1>
-            <h1 className="text-[3rem] font-bold mb-8 md:flex text-gray-600 dark:text-white justify-center">
+            <h1 className="text-[3rem] bg-white dark:bg-slate-900  font-bold mb-8 md:flex text-gray-600 dark:text-white justify-center">
               I &apos;m
               <span className=" text-teal-500 mx-2 font-light">
                 <Typewriter
@@ -89,7 +89,7 @@ const Hero = ({ children }) => {
               Developer
             </h1>
             <p
-              className="text-lg text-gray-700 md:w-[50%] dark:text-gray-300 md:ml-[25%] lg:w-[50%] lg:ml-[25%] mb-12"
+              className="text-lg dark:bg-slate-900 bg-white  text-gray-700 md:w-[50%] dark:text-gray-300 md:ml-[25%] lg:w-[50%] lg:ml-[25%] mb-12"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
