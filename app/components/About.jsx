@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
-import web from "/public/IMG_20230628_091420_1~2.jpg";
+import web from "/public/myphoto.jpg";
 import Section from "./Section";
 
 // import bolb from "../../public/blob.svg";
