@@ -22,58 +22,60 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      title: "Food",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: food,
-      githubLink: "https://github.com/your-username/project1",
-      tools: ["React", "Redux", "Next js", "Node js", "Express js"],
-      liveSiteLink: "https://project1-live-site.com",
+      title: "Movix",
+      description: "This is a Movie website for New movie trailer show from youtube using Api!",
+      image: movie,
+      githubLink: "#",
+      tools: ["React", "Redux", "Next js","Api"],
+      liveSiteLink: "https://movixproject01.netlify.app/",
     },
     {
-      title: "Movix",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: movie,
-      githubLink: "https://github.com/your-username/project1",
+      title: "Food",
+      description: "Coming soon ...",
+      image: food,
+      githubLink: "#",
       tools: ["React", "Redux", "Next js", "Node js", "Express js"],
-      liveSiteLink: "https://project1-live-site.com",
+      liveSiteLink: "#",
     },
+   
     {
       title: "Electronics",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Coming soon ...",
       image: electronics,
-      githubLink: "https://github.com/your-username/project1",
+      githubLink: "#",
       tools: ["React", "Redux", "Next js", "Node js", "Express js"],
-      liveSiteLink: "https://project1-live-site.com",
+      liveSiteLink: "#",
     },
     {
       title: "Car",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Coming soon ...",
       image: car,
-      githubLink: "https://github.com/your-username/project1",
+      githubLink: "#",
       tools: ["React", "Redux", "Next js", "Node js", "Express js"],
-      liveSiteLink: "https://project1-live-site.com",
+      liveSiteLink: "#",
     },
     {
       title: "Education",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Coming soon ...",
       image: education,
-      githubLink: "https://github.com/your-username/project1",
+      githubLink: "#",
       tools: ["React", "Redux", "Next js", "Node js", "Express js"],
-      liveSiteLink: "https://project1-live-site.com",
+      liveSiteLink: "#",
     },
     {
       title: "E-commerce",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Coming soon ...",
       image: ecommerce,
-      githubLink: "https://github.com/your-username/project1",
+      githubLink: "#",
       tools: ["React", "Redux", "Next js", "Node js", "Express js"],
-      liveSiteLink: "https://project1-live-site.com",
+      liveSiteLink: "#",
     },
   ];
 
   return (
     <Section
       title="Projects"
+      id="projects"
       subtitle="What i have build !"
       discription=""
       button=""

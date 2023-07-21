@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
-import Link from "next/link";
+import {Link} from "react-scroll"
 import {
   FaBars,
   FaCode,
@@ -106,7 +106,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="relative group h-8 overflow-hidden p-1 "
               >
-                <Link href="#home">
+                <Link smooth={true} duration={800} offset={-100} to="home">
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
@@ -124,7 +124,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#about">
+                <Link smooth={true} duration={800} offset={-100} to="about">
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
@@ -142,7 +142,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#projects">
+                <Link smooth={true} duration={800} offset={-100} to="projects">
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
@@ -160,7 +160,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#testimonial">
+                <Link smooth={true} duration={800} offset={-100} to="testimonial">
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
@@ -178,7 +178,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#contact">
+                <Link smooth={true} duration={800} offset={-100} to="contact">
                   <span className="flex items-center flex-col  text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}
@@ -202,7 +202,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#home">
+                <Link smooth={true} duration={800} offset={-100} to="home">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaHome
                       size={18}
@@ -218,7 +218,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#about">
+                <Link smooth={true} duration={800} offset={-100} to="about">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaUser
                       size={18}
@@ -234,7 +234,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#projects">
+                <Link smooth={true} duration={800} offset={-100} to="projects">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaCode
                       size={18}
@@ -250,7 +250,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#testimonial">
+                <Link smooth={true} duration={800} offset={-100} to="testimonial">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaComments
                       size={18}
@@ -268,7 +268,7 @@ const Layout = ({ children }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="relative group h-8 overflow-hidden p-1"
               >
-                <Link href="#contact">
+                <Link smooth={true} duration={800} offset={-100} to="contact">
                   <span className="flex items-center  space-x-2 text-gray-900 dark:text-white cursor-pointer">
                     <FaEnvelope
                       size={18}

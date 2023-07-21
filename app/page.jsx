@@ -29,13 +29,13 @@ const Home = () => {
 
       <AboutSection />
 
-      <PortfolioSection />
+      <PortfolioSection  />
 
       <SkillSection />
 
-      <TestimonialSection />
+      <TestimonialSection   />
 
-      <Contact />
+      <Contact  />
     
 
       <footer className="bg-white relative z-[600] dark:bg-gray-900 text-gray-900 dark:text-white py-10">
