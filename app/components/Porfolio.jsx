@@ -96,7 +96,7 @@ const PortfolioSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="h-full relative"
             >
-              <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-teal-900 via-transparent to-transparent opacity-100"></div>
+              <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-gray-900  to-transparent opacity-100"></div>
               <Image
                 src={project.image}
                 alt={project.title}
@@ -105,7 +105,7 @@ const PortfolioSection = () => {
                 className="w-[100%] object-cover h-full"
               />
             </motion.div>
-            <div  className="p-4 transition-all delay-100 duration-300  w-full h-full bg-gradient-to-b from-teal-500 to-teal-900  group-hover:block hidden absolute top-0 left-0 ">
+            <div  className="p-4 transition-all delay-100 duration-300  w-full h-full bg-gradient-to-b from-red-500 to-red-900  group-hover:block hidden absolute top-0 left-0 ">
               <motion.h3
                 className="text-2xl  group-hover:text-white font-bold dark:text-white text-gray-800 mb-2"
                 initial={{ opacity: 0, y: 10 }}

@@ -19,7 +19,9 @@ import {
   AiFillFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
+import Icons from "../components/Icons/Icons"
 import Image from "next/image";
+import Link from "next/link";
 const Hero = ({ children }) => {
   useEffect(() => {
     AOS.init({
@@ -49,7 +51,14 @@ const Hero = ({ children }) => {
     fade: true,
     cssEase: "linear",
   };
-
+  const icons = [
+    {  icon: <AiFillFacebook/> ,link:"https://www.facebook.com/beautyformind" },
+    {  icon: <AiFillGithub/> ,link:"https://github.com/ashraful-commits"  },
+    {  icon: <AiFillLinkedin/>,link:"https://www.linkedin.com/in/beautifulmind/" },
+    {  icon: <AiOutlineMail/> ,link:"www.ashrafulalam10000@gmail.com"  },
+   
+    // Add more skills here
+  ];
   return (
     <div
   
@@ -58,24 +67,24 @@ const Hero = ({ children }) => {
       <div className="relative container w-screen h-screen  mx-auto flex justify-center items-center ">
         <div className="hero-container w-screen h-screen  mx-auto flex justify-center items-center">
           <div className="text-center">
-            <h1 className="lg:text-[6rem] bg-white leading-tight dark:bg-slate-900   md:text-[4rem] text-[3rem] font-bold mb-8  ">
-              <span className="text-gray-600 dark:text-teal-600">
+            <h1 className="lg:text-[6rem]  bg-white leading-tight dark:bg-slate-900   md:text-[4rem] text-[3rem] font-bold mb-8  ">
+              <span className="text-gray-600 dark:text-red-600 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-pink-500 dark:to-violet-500 ">
                 Hi, I&apos;m
               </span>
-              <span className="text-teal-700 dark:text-white mx-2">
+              <span className="text-red-700 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 dark:text-white mx-2">
                 Md Ashraful Alam
               </span>
             </h1>
             <h1 className="lg:text-[3rem] text-[1.4rem] sm:text-[2rem] flex  md:flex-row bg-white dark:bg-slate-900  font-bold mb-8 md:flex text-gray-600 dark:text-white justify-center">
               I &apos;m
-              <span className=" text-teal-500 mx-2 font-light">
+              <span className=" text-red-500 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 mx-2 font-light">
                 <Typewriter
                   options={{
                     strings: ["Mern Stack", "JavaScript", "Next js"],
                     autoStart: true,
                     loop: true,
                     delayPerChar: 50,
-                    cursorClassName: "text-teal-500 font-bold",
+                    cursorClassName: "text-red-500 font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500",
                   }}
                 />
               </span>
@@ -90,22 +99,14 @@ const Hero = ({ children }) => {
               (MongoDB, Express.js, React.js, Node.js) stack.
             </p>
             <div className="flex justify-center gap-5 w-full h-full my-5">
-              <span className="inline-block p-2 group hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-900 cursor-pointer hover:bg-teal-500">
-                <AiFillGithub className=" text-xl text-gray-700  group-hover:text-white  dark:text-white" />
-              </span>
-              <span className="inline-block p-2 group hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-900 cursor-pointer hover:bg-teal-500">
-                <AiFillLinkedin className=" text-xl text-gray-700  group-hover:text-white  dark:text-white" />
-              </span>
-              <span className="inline-block p-2 group hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-900 cursor-pointer hover:bg-teal-500">
-                <AiFillFacebook className=" text-xl text-gray-700  group-hover:text-white  dark:text-white" />
-              </span>
-              <span className="inline-block p-2 group hover:shadow-2xl hover:shadow-white shadow-white border rounded-full border-teal-900 cursor-pointer hover:bg-teal-500">
-                <AiOutlineMail className=" text-xl text-gray-700  group-hover:text-white  dark:text-white" />
-              </span>
+             
+           {icons.map((items,index)=>{
+            return   <Icons icon={items.icon} link={items.link} key={index}/>
+           })}
             </div>
             <motion.button
        
-              className="px-8  hover:shadow-2xl text-2xl hover:shadow-white font-bold py-3 my-5 bg-teal-500 text-white rounded hover:bg-teal-600 transition-colors duration-300"
+              className="px-8 bg-clip-padding text-white bg-gradient-to-r from-pink-500 to-violet-500 hover:shadow-2xl text-2xl hover:shadow-white font-bold py-3 my-5 bg-red-500  rounded hover:bg-red-600 transition-colors duration-300"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 1 }}

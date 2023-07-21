@@ -135,7 +135,7 @@ const TestimonialSection = () => {
                   height={500}
                   className=" object-cover rounded-full w-full h-full"
                 />
-                <div className="p-14 rounded-full felx justify-center items-center  w-full h-full bg-gradient-to-b from-teal-500 to-teal-900 group-hover:block  text-center hidden absolute  top-0 left-0">
+                <div className="p-14 rounded-full felx justify-center items-center  w-full h-full bg-gradient-to-b from-red-500 to-red-900 group-hover:block  text-center hidden absolute  top-0 left-0">
                   <motion.h3
                     className="text-xl group-hover:text-white font-bold dark:text-white text-gray-800 mb-2"
                     initial={{ opacity: 0, y: 10 }}

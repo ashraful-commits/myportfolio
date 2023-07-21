@@ -13,12 +13,12 @@ const Section = ({ children, title, subtitle, discription, button }) => {
       <div className=" text-center w-full my-20  flex flex-col gap-14 justify-center item-center">
         <div className="flex items-center  justify-center flex-col">
           {title && (
-            <h2 className="lg:text-[4.5rem] rounded-lg  bg-white dark:bg-slate-800 px-20 border-2 py-5 dark:border-[2px] dark:border-gray-800 md:text-[4rem] text-[2rem] sm:text-[3rem] capitalize text-gray-600 font-bold my-5 dark:text-gray-300 ">
+            <h2 className="lg:text-[4.5rem] rounded-lg  bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 dark:bg-slate-800 px-20 border-2 py-5 dark:border-[2px] dark:border-gray-800 md:text-[4rem] text-[2rem] sm:text-[3rem] capitalize text-gray-100 font-bold my-5  ">
               {title}
             </h2>
           )}
           {subtitle && (
-            <h4 className="text-3xl bg-white  dark:bg-gray-900  px-5 py-4 capitalize text-gray-400 font-bold my-2">
+            <h4 className="text-3xl bg-white bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 dark:bg-gray-900  px-5 py-4 capitalize text-gray-400 font-bold my-2">
               {subtitle}
             </h4>
           )}
