@@ -28,7 +28,7 @@ const Section = ({ children, title, subtitle, discription, button }) => {
               {discription}
             </p>
           )}
-          {button && <Button button="Download cv" icon={<FaArrowDown />} />}
+          {button && <Button button="Download cv" icon={<FaArrowDown  />} link="https://drive.google.com/file/d/1X9PJaW2kKcJNlXvPRcpkDZskC4SC_ThZ/view?usp=sharing" />}
         </div>
         <div className="w-full flex flex-col items-center">{children}</div>
       </div>
