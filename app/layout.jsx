@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-blue-300">
+      <body className="bg-gradient-to-b from-blue-300 to-pink-300">
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -55,7 +55,7 @@ const Contact = () => {
                   placeholder="Email"
                   autocomplete="current-password"
                   required
-                  class=" px-3 h-[50px] dark:bg-white block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
+                  class=" px-3 dark:placeholder:text-gray-800  bg-transparent  h-[50px] dark:bg-white block w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-white sm:text-sm "
                 />
               </div>
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                   type="messge"
                   placeholder="Message"
                   required
-                  class="px-3 block dark:bg-white h-[50px] w-full border-[2px] border-gray-200 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm "
+                  class="px-3 block bg-transparent text-white dark:bg-white h-[50px] w-full border-[2px] border-gray-200 py-1.5  shadow-sm  placeholder:text-white dark:placeholder:text-gray-800 sm:text-sm "
                   cols="30"
                   rows="10"
                 ></textarea>
@@ -85,7 +85,7 @@ const Contact = () => {
             <div className="w-full">
               <button
                 type="submit"
-                class="flex w-full justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                class="flex bg-transparent w-full justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Send
               </button>

@@ -41,7 +41,15 @@ const Section = ({ children, title, subtitle, discription, button }) => {
           )}
           <Divider />
           {discription && (
-            <p className="text-gray-500 p-5 dark:bg-gray-900 w-[90%] text-justify  lg:w-[55%] capitalize my-2 text-xl">
+            <p
+              style={{
+                background: "rgba( 255, 255, 255, 0.25 )",
+                backdropFilter: "blur( 14px )",
+                webkitBackdropFilter: "blur( 14px )",
+                borderRadius: "10px",
+              }}
+              className="text-white p-5 dark:bg-gray-900 w-[90%] text-justify  lg:w-[55%] capitalize my-2 text-xl"
+            >
               {discription}
             </p>
           )}
