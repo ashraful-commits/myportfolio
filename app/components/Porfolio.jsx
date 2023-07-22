@@ -23,10 +23,11 @@ const PortfolioSection = () => {
   const projects = [
     {
       title: "Movix",
-      description: "This is a Movie website for New movie trailer show from youtube using Api!",
+      description:
+        "This is a Movie website for New movie trailer show from youtube using Api!",
       image: movie,
       githubLink: "#",
-      tools: ["React", "Redux", "Next js","Api"],
+      tools: ["React", "Redux", "Next js", "Api"],
       liveSiteLink: "https://movixproject01.netlify.app/",
     },
     {
@@ -37,7 +38,7 @@ const PortfolioSection = () => {
       tools: ["React", "Redux", "Next js", "Node js", "Express js"],
       liveSiteLink: "#",
     },
-   
+
     {
       title: "Electronics",
       description: "Coming soon ...",
@@ -105,7 +106,7 @@ const PortfolioSection = () => {
                 className="w-[100%] object-cover h-full"
               />
             </motion.div>
-            <div  className="p-4 transition-all delay-100 duration-300  w-full h-full bg-gradient-to-b from-red-500 to-red-900  group-hover:block hidden absolute top-0 left-0 ">
+            <div className="p-4 transition-all delay-100 duration-300  w-full h-full bg-gradient-to-b from-blue-500 to-blue-900  group-hover:block hidden absolute top-0 left-0 ">
               <motion.h3
                 className="text-2xl  group-hover:text-white font-bold dark:text-white text-gray-800 mb-2"
                 initial={{ opacity: 0, y: 10 }}
@@ -130,15 +131,16 @@ const PortfolioSection = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <h4 className="text-lg ">Tools:</h4>
-                <ul className="flex flex-wrap"> {project.tools.map((item, index) => {
-                  
-                  return (
-                    <li className="" key={index}>
-                      {item},
-                    </li>
-                  );
-                })}</ul>
-               
+                <ul className="flex flex-wrap">
+                  {" "}
+                  {project.tools.map((item, index) => {
+                    return (
+                      <li className="" key={index}>
+                        {item},
+                      </li>
+                    );
+                  })}
+                </ul>
               </motion.div>
               <motion.div
                 className="flex group-hover:text-white justify-center mt-4  dark:text-white"

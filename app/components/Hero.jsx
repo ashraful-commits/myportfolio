@@ -89,7 +89,7 @@ const Hero = ({ children }) => {
                     loop: true,
                     delayPerChar: 50,
                     cursorClassName:
-                      "text-red-500 font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500",
+                      "text-blue-500 font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500",
                   }}
                 />
               </span>
@@ -111,7 +111,7 @@ const Hero = ({ children }) => {
               })}
             </div>
             <motion.button
-              className="px-8 bg-clip-padding text-white bg-gradient-to-r from-pink-500 to-violet-500 hover:shadow-2xl text-2xl hover:shadow-white font-bold py-3 my-5 bg-red-500  rounded hover:bg-red-600 transition-colors duration-300"
+              className="px-8 bg-clip-padding text-white bg-gradient-to-r from-pink-500 to-violet-500 hover:shadow-2xl text-2xl hover:shadow-white font-bold py-3 my-5 bg-blue-500  rounded hover:bg-blue-600 transition-colors duration-300"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 1 }}

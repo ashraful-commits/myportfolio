@@ -22,7 +22,6 @@ const AboutSection = () => {
       subtitle="Who am I ?"
       discription="I am a professional MERN stack developer with a passion for creating high-quality web applications. With years of experience in front-end and back-end development, I specialize in building scalable and efficient solutions. My expertise includes React, Node.js, Express, and MongoDB."
       button="Download Cv"
-      
     >
       <motion.div
         className="flex justify-center sm:my-10 "
@@ -35,7 +34,7 @@ const AboutSection = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className=" bg-red-950 rounded-full w-[350px] h-[350px]   border-4 overflow-hidden  border-white relative z-1 flex justify-center "
+          className=" bg-blue-950 rounded-full w-[350px] h-[350px]   border-4 overflow-hidden  border-white relative z-1 flex justify-center "
         >
           <Image
             src={web}

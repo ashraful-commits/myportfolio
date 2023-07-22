@@ -73,7 +73,7 @@ const SkillSection = () => {
               webkitBackdropFilter: "blur( 14px )",
               borderRadius: "10px",
             }}
-            className="w-[100%] px-10 hover:bg-red-500 dark:hover:bg-gradient-to-b dark:hover:from-red-500 dark:hover:to-gary-300 group transition-all md:w-[45%] lg:w-[30%] bg-white dark:bg-gray-800 dark:text-white rounded-lg border-gray-200 dark:border-gray-800 border mx-1"
+            className="w-[100%] px-10 hover:bg-blue-500 dark:hover:bg-gradient-to-b dark:hover:from-blue-500 dark:hover:to-gary-300 group transition-all md:w-[45%] lg:w-[30%] bg-white dark:bg-gray-800 dark:text-white rounded-lg border-gray-200 dark:border-gray-800 border mx-1"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}

@@ -15,7 +15,6 @@ const Section = ({ children, title, subtitle, discription, button }) => {
             className=" dark:bg-gray-800 rounded-3xl bg-white"
             style={{
               background: "rgba( 255, 255, 255, 0.25 )",
-
               backdropFilter: "blur( 14px )",
               webkitBackdropFilter: "blur( 14px )",
               borderRadius: "10px",
