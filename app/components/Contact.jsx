@@ -15,13 +15,29 @@ const Contact = () => {
             height={200}
             className="w-full h-full"
           />
-          <h2 class="mt-10 text-center text-3xl dark:bg-slate-900 bg-white p-5 font-bold leading-9 tracking-tight text-gray-900 dark:text-white">
+          <h2
+            style={{
+              background: "rgba( 255, 255, 255, 0.45 )",
+              backdropFilter: "blur( 14px )",
+              webkitBackdropFilter: "blur( 14px )",
+              borderRadius: "10px",
+            }}
+            class="mt-10 text-center  text-xl md:text-3xl dark:bg-slate-900 bg-white p-5 font-bold leading-9 tracking-tight text-gray-900 dark:text-white"
+          >
             Sign in to your account
           </h2>
         </div>
 
         <div class="mt-10 flex flex-col items-center justify-center px-10 w-full">
-          <form class="w-[100%] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]">
+          <form
+            style={{
+              background: "rgba( 255, 255, 255, 0.45 )",
+              backdropFilter: "blur( 14px )",
+              webkitBackdropFilter: "blur( 14px )",
+              borderRadius: "10px",
+            }}
+            class="w-[100%] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 p-5 rounded-md shadow-sm lg:w-[50%] space-y-10 md:w-[70%]"
+          >
             <div className="w-full">
               <div class="flex items-center justify-between">
                 <label
@@ -63,14 +79,13 @@ const Contact = () => {
                   cols="30"
                   rows="10"
                 ></textarea>
-                <input />
               </div>
             </div>
 
             <div className="w-full">
               <button
                 type="submit"
-                class="flex w-full justify-center rounded-md bg-red-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                class="flex w-full justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Send
               </button>
